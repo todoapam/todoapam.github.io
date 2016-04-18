@@ -131,25 +131,33 @@ ul.nav {
 }
 .icon-pencil:before {
   content: "\64";
-  font-size: 100px;
+  font-size: 150px;
 }
 .icon-envelope:before {
   content: "\65";
+  font-size: 100px;
 }
 .icon-user:before {
   content: "\66";
-  /*color: #0000ff;*/
-  font-size: 100px;
+  font-size: 150px;
 }
 .icon-money:before {
   content: "\67";
-  font-size: 100px;
+  font-size: 150px;
 }
 .icon-youtube:before {
   content: "\68";
 }
-/* /Mis Fuentes */
+.icon-arrow-up:before {
+  content: "\69";
+  font-size: 20px;
+}
 
+/* /Mis Fuentes */
+#back-to-top .
+.glyphicon-triangle-top {
+  font-size: 40px;
+}
 /* footer */
 footer {
   background-color: #f74c3c;

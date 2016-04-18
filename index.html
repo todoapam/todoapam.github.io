@@ -35,18 +35,18 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-         <div class="container">
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                <span class="sr-only">Toggle navigation</span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
              </button>
-             <a class="navbar-brand" href="#">One Millon Lines</a>
+             <a class="navbar-brand" href="#jumbotron">One Millon Lines</a>
            </div>
            <div id="navbar" class="collapse navbar-collapse">
              <ul class="nav navbar-nav navbar-right">
@@ -58,7 +58,7 @@
        </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div id="jumbotron" class="jumbotron">
       <div class="container">
         <h1>Our goal is to inspire <br> Tallahassee to write 1.000.000<br> lines of code</h1>
         <p>All over the country people are taking the <strong>HOUR OF CODE</strong> challange issued by <strong>CODE.ORG</strong>. Millions of lines of code are being written. In the capital of Florida, Tallahasse, the community is taking the challenge and our goal is to write 1.000.000 lines of code_</p>
@@ -101,22 +101,6 @@
         </div><!-- /container -->
       </div><!-- /get-involved -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <form action="http://http://todoapam.github.io//todoapam@gmail.com">
-              <div class="form-group">
-                <label for="exampleInputEmail">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email" name="_replyto">
-              </div>
-              <textarea class="form-control" rows="3" name="body"></textarea>
-              <input type="submit" value="Send">
-            </form>
-          </div>
-        </div>
-      </div>
-
-
 <!-- footer -->
   <footer>
     <div class="container homepage">
@@ -124,7 +108,9 @@
     </div>
   </footer>
 <!-- /footer -->
-
+<div id="back-to-top">
+  <span class="glyphicon glyphicon-triangle-top" aria-hidden="true">
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -134,5 +120,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/smoothscroll.js"></script>
   </body>
 </html>
