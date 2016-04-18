@@ -42,6 +42,22 @@
             </div>
         </div>
     </nav>
+
+    <div id="link">My video</div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="carousel-1" class="carousel slide show" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
@@ -72,6 +88,17 @@
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $('#link').click(function () {
+        var src = 'http://www.youtube.com/v/FSi2fJALDyQ&amp;autoplay=1';
+        $('#myModal').modal('show');
+        $('#myModal iframe').attr('src', src);
+    });
+
+    $('#myModal button').click(function () {
+        $('#myModal iframe').removeAttr('src');
+    });
+</script>
 </body>
 
 </html>

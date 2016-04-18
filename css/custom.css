@@ -29,6 +29,23 @@ ul.nav {
   font-weight: 100;
   padding: 0 50px;
 }
+
+.modal-content iframe {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.modal-content .close {
+  position: absolute;
+  top: 5px;
+  right:5px;
+  background-color: white;
+  font-size: 20px;
+  width: 30px;
+  opacity: 1;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+}
 .btn-lg {
   font-size: 36px;
 }
@@ -154,15 +171,26 @@ ul.nav {
 }
 
 /* /Mis Fuentes */
-#back-to-top .
+
+/* Back to top */
+#back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+/* /Back to top */
 .glyphicon-triangle-top {
   font-size: 40px;
+  color:#333;
 }
 /* footer */
 footer {
+  text-align: center;
   background-color: #f74c3c;
+  padding-top: 100px
   padding-bottom: 30px;
-  padding-top: 150px
+  position: relative;
+
 }
 footer p {
   font-size: 14px !important;
@@ -210,4 +238,8 @@ footer p {
   #get-involved .col-md-4 {
     padding: 20px 0;
   }
+}
+
+#jumbotron a:focus {
+  border-color: none;
 }
