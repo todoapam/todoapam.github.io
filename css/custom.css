@@ -29,7 +29,14 @@ ul.nav {
   font-weight: 100;
   padding: 0 50px;
 }
-
+.modal-dialog {
+  position: absolute;
+  width: auto;
+  left:50%;
+  margin-left:-300px;
+  top:50%;
+  margin-top: -173px;
+}
 .modal-content iframe {
   margin-top: 15px;
   margin-bottom: 10px;
